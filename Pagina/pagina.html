@@ -22,7 +22,7 @@
 
     <input type="text" class="Campos" name="id_pais" id="id_pais" value="" placeholder="Ingrese el id de su pais"/>
     <br>
-    <h5 style="font-size: 10px;">Si no sabes cual es el id de tu pais, haz click <a href="https://wits.worldbank.org/wits/wits/WITSHELP-es/content/codes/country_codes.htm" target="_blank">aqui</a> </h5>
+    <h2 style="font-size: 10px;">Si no sabes cual es el id de tu pais, haz click <a href="https://wits.worldbank.org/wits/wits/WITSHELP-es/content/codes/country_codes.htm" target="_blank">aqui</a> </h2>
 
     <input type="text" class="Campos" id="nombre" name="nombre" value="" placeholder="Ingrese su nombre" oninput="validarLongitudNombre()"/>
 
@@ -38,16 +38,33 @@
 
     <input type="text" class="Campos" name="telefono" value="" placeholder="Ingrese su telefono" >
 
-    <input type="submit" class="boton" name="registro" value="Registrarse">
-    
+    <h4>Mostrar Gustos</h4>
+    <input type="radio" class="radio" onclick= "mostrarGustos();">
     <div id="gusto">
-    <h1>Gustos</h1>
+    <input type="text" class="Campos" id="color" name="color" placeholder="Color favorito">
+    <input type="text" class="Campos" id="marca" name="marca" placeholder="Marca favorita">
+    <input type="text" class="Campos" id="estilo" name="estilo" placeholder="Estilo de carro favorito">
+    <input type="text" class="Campos" id="modelo" name="modelo" placeholder="Modelo de carro preferido">
     
-    <input type="radio" name="gustos" id="gustos">
+    <div class="box">
+        <h4>Valor máximo a gastar en un vehículo</h4>
+        <h1>En millones</h1>
+        <input type="range" class="range" value="0" min="10" max="100" onmousemove="rangeSlider(this.value)">
+        <span id="rangeValue">0</span>
+    </div>
 
+    <div class="box">
+        <h4>Valor mínimo a gastar en un vehículo</h4>
+        <h1>En millones</h1>
+        <input type="range" class="range" value="0" min="10" max="100" onmousemove="rangeSlider2(this.value)">
+        <span id="rangeValue2">0</span>
+    </div>
+    </div> 
+
+    <input type="submit" class="boton" name="registro" value="Registrarse">
 </section>
     
 </form>
-<script src="pagina.js"></script>
+<script src="pagina.js"></script> <script src="movimiento.js"></script>
 </body>
 </html>

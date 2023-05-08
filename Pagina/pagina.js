@@ -137,4 +137,16 @@ function validarEmail(){
 
 function verificarTelefono(){}
 
+function mostrarGustos(){
+  document.getElementById('gusto').style.display = 'block';
+}
+
+function rangeSlider(value){
+  document.getElementById('rangeValue').innerHTML = value;
+}
+
+function rangeSlider2(value){
+  document.getElementById('rangeValue2').innerHTML = value;
+}
+
 
