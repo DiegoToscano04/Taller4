@@ -1,4 +1,4 @@
-var completado = false;
+var completado = false; 
 
  function validarLongitudNombre() {
     var nombre;
@@ -136,4 +136,5 @@ function validarEmail(){
 }
 
 function verificarTelefono(){}
+
 
