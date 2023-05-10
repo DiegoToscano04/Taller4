@@ -36,7 +36,8 @@
 
     <input type="text" class="Campos" id="email" name="email" value="" placeholder="Ingrese un email" oninput="validarEmail()">
 
-    <input type="text" class="Campos" name="telefono" value="" placeholder="Ingrese su telefono" >
+    <input type="text" class="Campos" id="telefono"name="telefono" value="" placeholder="Ingrese su telefono" size="40" oninput="validarTelefono()"/>
+
 
     <h4>Mostrar Gustos</h4>
     <input type="radio" class="radio" onclick= "mostrarGustos();">
@@ -61,7 +62,8 @@
     </div>
     </div> 
 
-    <input type="submit" class="boton" name="registro" value="Registrarse">
+       <input type="submit" class="boton" id="registro" name="registro" value="Registrarse" onclick="activarBoton()"/>
+
 </section>
     
 </form>
