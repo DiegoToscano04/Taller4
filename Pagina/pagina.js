@@ -1,4 +1,6 @@
-var completado = false; 
+var completado = false;
+
+
 
  function validarLongitudNombre() {
     var nombre;
@@ -135,7 +137,34 @@ function validarEmail(){
   }
 }
 
-function verificarTelefono(){}
+function verificarTelefono(){
+var telefono;
+telefono = document.getElementById("telefono").value.trim();
+var regexNumero = /[0-9]/;
+if(email.length === 0 ){
+  alert("Debe llenar este campo")
+  completado = false;
+}
+else{
+  completado=true;
+}
+if ( regexNumero.test(ccpaswd)){
+completado=true;
+}
+else{
+  alert("Debe digitar unicamente numeros");
+  completado=false;
+}
+}
+
+function botonRegistro(){
+  var botonRegistro = document.getElementById("registro");
+  if (completado) {
+    botonRegistro.disabled = false;
+  } else {
+    botonRegistro.disabled = true;
+  }
+}
 
 function mostrarGustos(){
   document.getElementById('gusto').style.display = 'block';
